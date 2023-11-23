@@ -1,8 +1,12 @@
-import NavDark from "./components/Dark/Navbar-Dark";
+import NavBar from "./components/Navbar";
+import FooterComp from "./components/Footer";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
   return (
     <>
-      <NavDark />
+      <NavBar />
+      <FooterComp />
     </>
   );
 }

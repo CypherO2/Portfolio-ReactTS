@@ -1,11 +1,11 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
-import Space6 from "../../assets/Portfolio Images/Space6.png";
-import "./Navbar-Dark.css";
+import Space6 from "../assets/Portfolio Images/Space6.png";
+import { getTheme, switchTheme } from "../functions/ThemeSwitch";
 
-function NavbarDark() {
+function NavBar() {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark" className="test">
+      <Navbar data-bs-theme="dark" className={getTheme()}>
         <Container>
           <Navbar.Brand href="#home">
             <img
@@ -21,9 +21,15 @@ function NavbarDark() {
             <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
           </Nav>
+          <Nav>
+            <Nav.Link onClick={() => switchTheme()}>PlaceholderText</Nav.Link>
+          </Nav>
         </Container>
       </Navbar>
     </>
   );
 }
-export default NavbarDark;
+export default NavBar;
+
+
+//
