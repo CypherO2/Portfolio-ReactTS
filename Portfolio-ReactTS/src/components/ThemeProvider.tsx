@@ -1,5 +1,5 @@
 import { ReactNode, createContext } from "react";
-import useName from "../hooks/useName";
+import useTheme from "../hooks/useTheme";
 
 interface ThemeContextType{
     theme: "bg-light" | "bg-dark"
