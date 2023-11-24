@@ -11,9 +11,9 @@ export const ThemeContext = createContext<ThemeContextType | null>(null)
 function ThemeProvider({ children } : { children : ReactNode}) {
     const { theme, setTheme } = useTheme();
 
-    return {
+    return (
         <ThemeContext.Provider value={{ theme, setTheme}}>
             {children}
         </ThemeContext.Provider>
-    }
+    );
     } 
