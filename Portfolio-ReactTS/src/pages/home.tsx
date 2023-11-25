@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
-import Portrait from "../assets/Portfolio Images/PortraitImage.png";
+// import Portrait from "../assets/Portfolio Images/PortraitImage.png";
 import Portrait2 from "../assets/Portfolio Images/PortraitImage2.png";
 import Skills from "../components/SkillList";
 import CarouselComp from "../components/HomeCarousel";
