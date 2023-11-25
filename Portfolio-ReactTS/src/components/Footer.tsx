@@ -109,7 +109,7 @@ function FooterComp() {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           © 2023 Copyright:{" "}
-          <a className="text-white" href="https://github.com/CypherO2">
+          <a className="text-white" href="#temp-link">
             Charles J Presley
           </a>
         </div>

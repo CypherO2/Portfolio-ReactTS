@@ -4,6 +4,8 @@ import Portrait from "../assets/Portfolio Images/PortraitImage.png";
 import Portrait2 from "../assets/Portfolio Images/PortraitImage2.png";
 import Skills from "../components/SkillList";
 import CarouselComp from "../components/HomeCarousel";
+import DiscordWidget from "../components/DiscServWidget";
+import Likes from "../components/ListLikes";
 
 function HomePage() {
   useEffect(() => {
@@ -11,7 +13,11 @@ function HomePage() {
   });
   return (
     <>
-      <Row className="mt-5 pt5"></Row>
+      <Row className="">
+        <Col className="mb-4 pb-5">
+          <CarouselComp />
+        </Col>
+      </Row>
       <Row className="">
         <Col className="border-bottom border-dark mb-1">
           <h1>
@@ -20,9 +26,6 @@ function HomePage() {
           <h6 className="text-muted">
             I am an aspiring React, TypeScript and Python Developer and Artist.
           </h6>
-        </Col>
-        <Col className="mb-1" xs={3}>
-          <img src={Portrait} alt="" className="rounded" width="100px" />
         </Col>
       </Row>
       <Row className="mb-2 pb-2 pt-3">
@@ -41,9 +44,13 @@ function HomePage() {
           <Skills />
         </Col>
       </Row>
-      <Row className="">
-        <Col className="m-4 pb-5">
-          <CarouselComp />
+      <Row className="pb-5">
+        <Col className="">
+          <h3 className="">My Likes Include: </h3>
+          <Likes />
+        </Col>
+        <Col className="">
+          <DiscordWidget />
         </Col>
       </Row>
     </>
