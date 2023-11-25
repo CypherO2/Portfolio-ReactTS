@@ -1,35 +1,36 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
-import Space6 from "../assets/Portfolio Images/Space6.png";
-import { getTheme, switchTheme } from "../functions/ThemeSwitch";
+import Logo from "../assets/Portfolio Images/Space6.png";
 
 function NavBar() {
   return (
     <>
-      <Navbar data-bs-theme="dark" className={getTheme()}>
+      <Navbar bg="dark" data-bs-theme="dark" className="sticky-top">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="/">
             <img
-              src={Space6}
+              src={Logo}
               width="30"
               height="30"
               className="d-inline-block align-top rounded"
-              alt="React Bootstrap logo"
+              alt="Logo"
             />
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/art">Art</Nav.Link>
+            <Nav.Link href="/photos">Photography</Nav.Link>
+            <Nav.Link href="/videos">Videography</Nav.Link>
+            <Nav.Link href="/games">Games</Nav.Link>
+            <Nav.Link href="/other">Other</Nav.Link>
           </Nav>
-          <Nav>
-            <Nav.Link onClick={() => switchTheme()}>PlaceholderText</Nav.Link>
-          </Nav>
+          {/* <Nav>
+            <Nav.Link>Color Mode</Nav.Link>
+          </Nav> */}
         </Container>
       </Navbar>
     </>
   );
 }
 export default NavBar;
-
 
 //

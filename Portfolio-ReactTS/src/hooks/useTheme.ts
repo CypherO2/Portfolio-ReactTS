@@ -3,9 +3,11 @@ import { useState } from "react";
 function useTheme() {
   const storedTheme = localStorage.getItem("theme");
 
-  const [theme, setTheme] = useState<"bg-light" | "bg-dark">(storedTheme === "bg-dark" ? storedTheme : "bg-light");
- 
-  const saveTheme = (theme: "bg-light" | "bg-dark") => {
+  const [theme, setTheme] = useState<"light" | "dark">(
+    storedTheme === "dark" ? storedTheme : "light"
+  );
+
+  const saveTheme = (theme: "light" | "dark") => {
     localStorage.setItem("theme", theme);
     setTheme(theme);
   };
