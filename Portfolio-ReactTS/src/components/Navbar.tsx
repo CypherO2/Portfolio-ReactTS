@@ -1,14 +1,18 @@
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import Logo from "../assets/Portfolio Images/Space6.png";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeProvider";
 
 function NavBar() {
   const themeContext = useContext(ThemeContext);
-  
+
   return (
     <>
-      <Navbar bg={themeContext?.theme} data-bs-theme={themeContext?.theme} className="sticky-top">
+      <Navbar
+        bg={themeContext?.theme}
+        data-bs-theme={themeContext?.theme}
+        className="sticky-top"
+      >
         <Container>
           <Navbar.Brand href="/">
             <img
@@ -28,8 +32,18 @@ function NavBar() {
             <Nav.Link href="/other">Other</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link onClick={() => themeContext?.setTheme(themeContext?.theme === "light" ? "dark" : "light")}>Color Mode</Nav.Link>
-            <Nav.Link>Theme = {themeContext?.theme}</Nav.Link>
+            <Button
+              variant="danger"
+              onClick={() =>
+                themeContext?.setTheme(
+                  themeContext?.theme === "dark" ? "light" : "dark"
+                )
+              }
+            >
+              <a style={{ textTransform: "capitalize" }}>
+                {themeContext?.theme} Mode
+              </a>
+            </Button>
           </Nav>
         </Container>
       </Navbar>

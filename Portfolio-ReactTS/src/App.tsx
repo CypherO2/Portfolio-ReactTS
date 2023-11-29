@@ -7,8 +7,9 @@ import PhotoPage from "./pages/photos";
 import VideoPage from "./pages/videos";
 import NavBar from "./components/Navbar";
 import FooterComp from "./components/Footer";
+import ThemeProvider from "./components/ThemeProvider";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import { Container, ThemeProvider } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import {
   INDEX_PATH,
   ART_PATH,

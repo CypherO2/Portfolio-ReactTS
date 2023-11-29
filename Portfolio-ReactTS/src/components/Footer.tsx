@@ -6,11 +6,14 @@ import {
   MDBCol,
   MDBRow,
 } from "mdb-react-ui-kit";
+import { useContext } from "react";
+import { ThemeContext } from "./ThemeProvider";
 
 function FooterComp() {
+  const themeContext = useContext(ThemeContext);
   return (
     <>
-      <MDBFooter  className="bg-dark text-secondary">
+      <MDBFooter bg={themeContext?.theme} data-bs-theme={themeContext?.theme}>
         <MDBContainer className="p-4">
           <MDBRow>
             <MDBCol lg="6" md="12" className="mb-4 mb-md-0">
