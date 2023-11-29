@@ -11,8 +11,8 @@ function ImgCarousel() {
           className="d-block w-100"
           src={Space5}
           alt="First slide"
-          width={900}
-          height={500}
+          width={300}
+          height={530}
         />
         <Carousel.Caption className="text-light">
           <h5>Space Image No.5</h5>
@@ -24,8 +24,8 @@ function ImgCarousel() {
           className="d-block w-100"
           src={ArtProj}
           alt="Second slide"
-          width={900}
-          height={500}
+          width={300}
+          height={530}
         />
         <Carousel.Caption className="text-light">
           <h5>Demon Slayer: Mixed Media Piece</h5>
@@ -37,8 +37,8 @@ function ImgCarousel() {
           className="d-block w-100"
           src={GemSword}
           alt="Third slide"
-          width={900}
-          height={500}
+          width={300}
+          height={530}
         />
         <Carousel.Caption className="text-light">
           <h5>A Blade of Auircryst</h5>

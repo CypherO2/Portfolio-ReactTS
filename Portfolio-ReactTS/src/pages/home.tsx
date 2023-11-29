@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Row, Col } from "react-bootstrap";
 // import Portrait from "../assets/Portfolio Images/PortraitImage.png";
-import Portrait2 from "../assets/Portfolio Images/PortraitImage2.png";
+// import Portrait3 from "../assets/Portfolio Images/PortraitImage3.png";
 import Skills from "../components/SkillList";
 import CarouselComp from "../components/HomeCarousel";
 import DiscordWidget from "../components/DiscServWidget";
@@ -24,20 +24,21 @@ function HomePage() {
             <b>Hello, I am CJ</b>
           </h1>
           <h6 className="text-muted">
-            I am an aspiring React, TypeScript and Python Developer and Artist.
+            I am an aspiring <b>React</b>, <b>TypeScript</b> and <b>Python Developer</b> and <b>Artist</b>.
           </h6>
         </Col>
       </Row>
-      <Row className="mb-2 pb-2 pt-3">
-        <Col>
+      <Row>
+        <Col className="border border-white-50 align-items-center justify-content-center">
           {/* <img
-            src={Portrait2}
+            src={Portrait3}
             alt=""
             className="fluid rounded"
             width="90%"
             height={450}
           /> */}
-          <p className="">Insert Picture Here</p>
+          <p className="pt-5 pb-5"><br/><br/></p>
+          <p className="text-center pt-5 mt-5 text-secondary" ><b>Insert Picture Here</b></p>
         </Col>
         <Col className="" xs={7}>
           <h3 className="text-left">My Skills Include:</h3>
