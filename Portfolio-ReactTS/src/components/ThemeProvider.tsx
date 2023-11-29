@@ -2,8 +2,8 @@ import { ReactNode, createContext } from "react";
 import useTheme from "../hooks/useTheme";
 
 interface ThemeContextType {
-  theme: "bg-light" | "bg-dark";
-  setTheme: (theme: "bg-light" | "bg-dark") => void;
+  theme: "light" | "dark";
+  setTheme: (theme: "light" | "dark") => void;
 }
 
 export const ThemeContext = createContext<ThemeContextType | null>(null);

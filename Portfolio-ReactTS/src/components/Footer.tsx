@@ -10,7 +10,7 @@ import {
 function FooterComp() {
   return (
     <>
-      <MDBFooter className="bg-dark text-secondary">
+      <MDBFooter  className="bg-dark text-secondary">
         <MDBContainer className="p-4">
           <MDBRow>
             <MDBCol lg="6" md="12" className="mb-4 mb-md-0">

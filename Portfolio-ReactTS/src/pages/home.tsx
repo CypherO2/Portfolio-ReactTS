@@ -30,14 +30,14 @@ function HomePage() {
       </Row>
       <Row className="mb-2 pb-2 pt-3">
         <Col>
-          <img
+          {/* <img
             src={Portrait2}
             alt=""
             className="fluid rounded"
             width="90%"
             height={450}
-          />
-          <p className=""></p>
+          /> */}
+          <p className="">Insert Picture Here</p>
         </Col>
         <Col className="" xs={7}>
           <h3 className="text-left">My Skills Include:</h3>
