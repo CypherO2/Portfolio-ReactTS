@@ -101,7 +101,7 @@ function Likes() {
         </ListGroup.Item>
         <ListGroup.Item variant="dark">
           <Row>
-            <Col>Python Coding</Col>{" "}
+            <Col>Python Coding</Col>
             <Col xs={2}>
               <Badge pill bg="primary" className="mx-2 align-baseline">
                 In-Page
@@ -111,7 +111,7 @@ function Likes() {
         </ListGroup.Item>
         <ListGroup.Item variant="dark">
           <Row>
-            <Col>Web Development</Col>{" "}
+            <Col>Web Development</Col>
             <Col xs={2}>
               <Badge pill bg="primary" className="mx-2 align-baseline">
                 In-Page
@@ -121,7 +121,7 @@ function Likes() {
         </ListGroup.Item>
         <ListGroup.Item variant="dark">
           <Row>
-            <Col>Music</Col>{" "}
+            <Col>Music</Col>
             <Col xs={2}>
               <Badge pill bg="primary" className="mx-2 align-baseline">
                 In-Page
