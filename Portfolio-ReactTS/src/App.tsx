@@ -20,24 +20,27 @@ import {
   NOT_FOUND_PATH,
 } from "./constants/paths";
 import { Route, Routes } from "react-router-dom";
+import { ThemeContext } from "./components/ThemeProvider"
+import { useContext, useState } from "react";
 
 function App() {
+  const themeContext = useContext(ThemeContext);
   return (
     <>
       <ThemeProvider>
-        <NavBar />
-        <Container>
-          <Routes>
-            <Route path={INDEX_PATH} element={<HomePage />} />
-            <Route path={ART_PATH} element={<ArtPage />} />
-            <Route path={PHOTO_PATH} element={<PhotoPage />} />
-            <Route path={VIDEOS_PATH} element={<VideoPage />} />
-            <Route path={GAMES_PATH} element={<GamesPage />} />
-            <Route path={OTHER_PATH} element={<OtherPage />} />
-            <Route path={NOT_FOUND_PATH} element={<ErrorPage />} />
-          </Routes>
-        </Container>
-        <FooterComp />
+            <NavBar />
+            <Container>
+              <Routes>
+                <Route path={INDEX_PATH} element={<HomePage />} />
+                <Route path={ART_PATH} element={<ArtPage />} />
+                <Route path={PHOTO_PATH} element={<PhotoPage />} />
+                <Route path={VIDEOS_PATH} element={<VideoPage />} />
+                <Route path={GAMES_PATH} element={<GamesPage />} />
+                <Route path={OTHER_PATH} element={<OtherPage />} />
+                <Route path={NOT_FOUND_PATH} element={<ErrorPage />} />
+              </Routes>
+            </Container>
+            <FooterComp />
       </ThemeProvider>
     </>
   );

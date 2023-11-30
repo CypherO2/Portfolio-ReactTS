@@ -1,8 +1,11 @@
 import ListGroup from "react-bootstrap/ListGroup";
+import { ThemeContext } from "./ThemeProvider";
+import { useContext } from "react";
 
 function Skills() {
+  const themeContext = useContext(ThemeContext);
   return (
-    <ListGroup>
+    <ListGroup variant={themeContext?.theme}>
       <ListGroup.Item>React (using TypeScript)</ListGroup.Item>
       <ListGroup.Item>Web Development (HTML, CSS, Bootstrap)</ListGroup.Item>
       <ListGroup.Item>

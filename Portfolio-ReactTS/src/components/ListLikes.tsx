@@ -16,7 +16,7 @@ function Likes() {
 
   return (
     <>
-      <Accordion defaultActiveKey="0" flush>
+      <Accordion defaultActiveKey="0" className="">
         <Accordion.Item eventKey="0">
           <Accordion.Header className="">
             Honkai Impact 3rd
@@ -139,39 +139,57 @@ function Likes() {
             <Badge pill bg="dark" className="mx-2 align-baseline">
               in-page
             </Badge>
-            <Accordion.Item eventKey="6">
-              <Accordion.Header className=""></Accordion.Header>
-              <Accordion.Body className=""></Accordion.Body>
-            </Accordion.Item>
+          </Accordion.Header>
+          <Accordion.Body className="">
+            <p>
+              Python is a very fun language to code in, its a very consice
+              language that is linear in how it runs from top to bottom (unless
+              told otherwise).
+              <br />
+              <br />
+              C# on the other hand is fun in a different regard, its ease of use
+              and accessiblity to design tools make it a language that is
+              interesting to mess around with.
+              <br />
+              <br />
+              ReactTS; I enjoy this form of web development because of how fast
+              and simple it is to create re-useable components to be placed
+              throughout a site, its in fact how I made this Portfolio site.
+            </p>
+          </Accordion.Body>
+        </Accordion.Item>
+
+        <Accordion.Item eventKey="7">
+          <Accordion.Header className="">
+            Dungeons and Dragons
+            <Badge pill bg="dark" className="mx-2 align-baseline">
+              in-page
+            </Badge>
           </Accordion.Header>
           <Accordion.Body className=""></Accordion.Body>
         </Accordion.Item>
 
-        <Accordion.Item eventKey="7">
-          <Accordion.Header className=""></Accordion.Header>
+        <Accordion.Item eventKey="8">
+          <Accordion.Header className="">
+            History, Folklore and Myths
+            <Badge pill bg="dark" className="mx-2 align-baseline">
+              in-page
+            </Badge>
+          </Accordion.Header>
+          <Accordion.Body className=""></Accordion.Body>
+        </Accordion.Item>
+
+        <Accordion.Item eventKey="9">
+          <Accordion.Header className="">
+            Music
+            <Badge pill bg="dark" className="mx-2 align-baseline">
+              in-page
+            </Badge>
+          </Accordion.Header>
           <Accordion.Body className=""></Accordion.Body>
         </Accordion.Item>
       </Accordion>
-      {/*<ListGroup.Item variant="dark">
-          <Row>
-            <Col>Python Coding</Col>
-            <Col xs={2}>
-              <Badge pill bg="primary" className="mx-2 align-baseline">
-                In-Page
-              </Badge>
-            </Col>
-          </Row>
-        </ListGroup.Item>
-        <ListGroup.Item variant="dark">
-          <Row>
-            <Col>Web Development</Col>
-            <Col xs={2}>
-              <Badge pill bg="primary" className="mx-2 align-baseline">
-                In-Page
-              </Badge>
-            </Col>
-          </Row>
-        </ListGroup.Item>
+      {/*
         <ListGroup.Item variant="dark">
           <Row>
             <Col>Music</Col>
@@ -213,22 +231,7 @@ function Likes() {
           </Row>
         </ListGroup.Item>
       </ListGroup>
-
-
-      <Modal data-bs-theme={themeContext?.theme} show={show} onHide={handleClose} size="lg" centered>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal> */}
+              */}
     </>
   );
 }

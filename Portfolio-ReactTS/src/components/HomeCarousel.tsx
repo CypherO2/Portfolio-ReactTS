@@ -2,10 +2,13 @@ import Carousel from "react-bootstrap/Carousel";
 import Space5 from "../assets/Portfolio Images/Space5.png";
 import ArtProj from "../assets/Portfolio Images/ArtFP.png";
 import GemSword from "../assets/Portfolio Images/CrystalSword.png";
+import { ThemeContext } from "./ThemeProvider";
+import { useContext } from "react";
 
 function ImgCarousel() {
+  const themeContext = useContext(ThemeContext);
   return (
-    <Carousel data-bs-theme="light" className="">
+    <Carousel data-bs-theme={themeContext?.theme} className="">
       <Carousel.Item>
         <img
           className="d-block w-100"
