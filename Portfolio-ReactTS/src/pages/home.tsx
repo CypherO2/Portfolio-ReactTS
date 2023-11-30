@@ -45,12 +45,12 @@ function HomePage() {
           <Skills />
         </Col>
       </Row>
-      <Row className="pb-5">
+      <Row className="py-3">
         <Col className="">
           <h3 className="">My Likes Include: </h3>
           <Likes />
         </Col>
-        <Col className="">
+        <Col className="py-3">
           <DiscordWidget />
         </Col>
       </Row>

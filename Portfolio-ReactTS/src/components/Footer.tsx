@@ -13,7 +13,7 @@ function FooterComp() {
   const themeContext = useContext(ThemeContext);
   return (
     <>
-      <MDBFooter bg={themeContext?.theme} data-bs-theme={themeContext?.theme}>
+      <MDBFooter bgColor={themeContext?.theme} className="text-secondary">
         <MDBContainer className="p-4">
           <MDBRow>
             <MDBCol lg="6" md="12" className="mb-4 mb-md-0">
@@ -34,7 +34,7 @@ function FooterComp() {
                 <li>
                   <a
                     href="https://github.com/CypherO2"
-                    className="text-white-50"
+                    className="text-secondary"
                   >
                     Github - CypherO2
                   </a>
@@ -42,7 +42,7 @@ function FooterComp() {
                 <li>
                   <a
                     href="https://www.youtube.com/@Nox-Noctiflora"
-                    className="text-white-50"
+                    className="text-secondary"
                   >
                     Youtube - Nox Noctiflora
                   </a>
@@ -50,7 +50,7 @@ function FooterComp() {
                 <li>
                   <a
                     href="https://discord.gg/KJmZXACYjW"
-                    className="text-white-50"
+                    className="text-secondary"
                   >
                     Discord Server - cassi06
                   </a>
@@ -58,7 +58,7 @@ function FooterComp() {
                 <li>
                   <a
                     href="https://uk.linkedin.com/in/charles-presley-b75399244"
-                    className="text-white-50"
+                    className="text-secondary"
                   >
                     LinkedIn - Charles Presley
                   </a>
@@ -73,7 +73,7 @@ function FooterComp() {
                 <li>
                   <a
                     href="https://github.com/CypherO2/Portfolio-ReactTS"
-                    className="text-white-50"
+                    className="text-secondary"
                   >
                     Portfolio-ReactTS
                   </a>
@@ -81,7 +81,7 @@ function FooterComp() {
                 <li>
                   <a
                     href="https://github.com/CypherO2/WebExample-R"
-                    className="text-white-50"
+                    className="text-secondary"
                   >
                     WebExample-R
                   </a>
@@ -89,7 +89,7 @@ function FooterComp() {
                 <li>
                   <a
                     href="https://github.com/CypherO2/Pokedex-python"
-                    className="text-white-50"
+                    className="text-secondary"
                   >
                     Pokedex-python
                   </a>
@@ -97,7 +97,7 @@ function FooterComp() {
                 <li>
                   <a
                     href="https://github.com/CypherO2/Pokedex-python"
-                    className="text-white-50"
+                    className="text-secondary"
                   >
                     PersonalLib
                   </a>
@@ -112,7 +112,7 @@ function FooterComp() {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           © 2023 Copyright:{" "}
-          <a className="text-white" href="#temp-link">
+          <a className="text-secondary" href="#temp-link">
             Charles J Presley
           </a>
         </div>

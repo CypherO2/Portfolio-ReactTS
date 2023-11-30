@@ -2,6 +2,7 @@ import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import Logo from "../assets/Portfolio Images/Space6.png";
 import { useContext } from "react";
 import { ThemeContext } from "./ThemeProvider";
+import Icon from '../assets/Icons/themeIcon.png';
 
 function NavBar() {
   const themeContext = useContext(ThemeContext);
@@ -33,16 +34,17 @@ function NavBar() {
           </Nav>
           <Nav>
             <Button
-              variant="danger"
+              variant="light"
               onClick={() =>
                 themeContext?.setTheme(
                   themeContext?.theme === "dark" ? "light" : "dark"
                 )
               }
             >
-              <a style={{ textTransform: "capitalize" }}>
+              <img src={Icon} alt="Button Icon" className="d-block align-middle" />
+              {/* <a style={{ textTransform: "capitalize" }}>
                 {themeContext?.theme} Mode
-              </a>
+              </a> */}
             </Button>
           </Nav>
         </Container>
